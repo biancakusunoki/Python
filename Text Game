@@ -1,0 +1,61 @@
+#Created By Bianca Clara C Kusunoki
+
+#ENG: The code was created in a simulation situation where a enterprise, in that case, a fictional one that works with food delivery, uses a game that generates a random food name, side dish, drink and dessert, displaying it on the screen.It also asks for the client e-mail. 
+
+
+import random
+
+
+eat=["Japanese Food","Chinese Food","Fast Food", "Brazilian Food","Mexican Food","Healthy Food","Italian Food", "Gourmet Burger","100% Vegan Food", "Porkchop", "Arabian Food", "Baked Stuffed Potatoes", "Homemade Food", "Fried Pastry"]
+
+sides=["French Fries","Nuggets","Onion Rings","Cheese Sticks","Caesar Salad", "Garlic Bread"]
+
+drin=["A cold water, be a hydro homie!", "Soft Drink", "A refreshing juice", "Coffee, for energy!", "A drink with electrolytres, please!", "Hot Cocoa", "Tea to calm the mind", "Bobba Tea", "Energetic"]
+
+#variável sobremesa criada
+
+sweet=["Ice Cream, Ice cream!", "Mexican Paletas", "Petit Gateau", "A cake, but that one must not be a lie!", "Chocolate Coookieeeees! Just like Cookie Monster would order!", "A really filled pie","Mexican Churros", "Donuts, like that pink glazed one with sprinkles from the yellow people cartoon. Do'h!"]
+
+
+a = random.choice(eat)
+b = random.choice(sides)
+c = random.choice(drin)
+d = random.choice(sweet)
+
+
+food = a
+sidemeal = b
+drink = c
+dessert = d
+
+
+empresa = "Bert & Ernie Delivery"
+titulo = empresa.center(20) 
+x = titulo.upper() 
+print(x)
+
+#Copyright: The characters belong to Sesame Street Workshop and Jim Davis. I don't own 'Bert' and 'Ernie'. All rights reserved.
+
+print("Are you unsure about what to eat today? Let us help! ;)" , "\n")
+
+
+print("I think you could eat tonight: ",food ,"\n")
+
+
+print("And what about a sidemeal?: ", sidemeal , "\n")
+
+
+print("Are you thirsty? What about a drink?: ", drink , "\n")
+
+
+print("And what about a dessert? You deserve it! Eat a: ", dessert , "\n")
+
+
+
+print("So, did you liked what we suggested? If not, or if you want to play again, click on the button again and receive new results!", "\n")
+
+print("Interested in our newsletter? Enter here your e-mail to receive news, coupons, and much more directly at your inbox:", "\n")
+
+y = input()
+
+print("Thank you for using our services. Your e-mail: \"", y, "\" has been added to", x, "newsletter.")
